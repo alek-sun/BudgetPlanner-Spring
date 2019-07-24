@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Планирование бюджета</string>
+    <string name="your_category">Ваши категории</string>
+    <string name="no_cat_yet">Ещё нет категорий</string>
+    <string name="add_category">Добавить категорию</string>
+    <string name="enter_cat_name">Введите название категории</string>
+    <string name="create">Создать</string>
+    <string name="add_budg">Добавить бюджет</string>
+    <string name="add_spend">Добавить расход</string>
+    <string name="change_budg">Изменить бюджет</string>
+    <string name="fill_budg">Заполните бюджет</string>
+    <string name="ok">OK</string>
+    <string name="cost_of_buy">Стоимость покупки</string>
+    <string name="add_description_of_buy">Добавьте заметку о покупке</string>
+    <string name="choose_category">Выберите категорию</string>
+    <string name="no_transactions">Нет транзакций</string>
+    <string name="add_transaction">Добавьте расход</string>
+    <string name="list_of_transaction">Ваши транзакции</string>
+</resources>

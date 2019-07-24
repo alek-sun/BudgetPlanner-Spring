@@ -1,0 +1,34 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.hibernate:hibernate-core:5.4.2.Final")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'ftc.shift.scheduler'
+version = '1.0'
+sourceCompatibility = 9
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.5.RELEASE'
+    
+    implementation 'mysql:mysql-connector-java:8.0.15'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.1.Final'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    //compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.5.0'
+}
